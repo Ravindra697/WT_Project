@@ -1,0 +1,166 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="sir_website.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+</head>
+<style>
+  .img_styles:hover .image_title{
+    display: block;
+  }
+  .image_title{
+    position: absolute;color:pink;
+    margin:25px 70px;
+    display: none;
+  }
+</style>
+<body>
+
+    <div class="title" id="t">
+        <center>
+        <div class="img_styles">
+          <img src="booklo.PNG" width="40px" height="40px" class="logo">
+          <div class="image_title">RavindraBodavula</div>
+        </div>
+        <span>Computer science and engineering</span>
+        <a href="#" onclick="Func();"><i class="fa fa-bars fa-2x" ></i></a>
+        </center>
+    </div>
+    <br>
+    <nav id="navg">
+    <ul>
+        <li><a href=""><i class="fa fa-home fa-1x"></i> Home</a></li>
+        <li><a href=""><i class="fa-solid fa-book-open-reader"></i>Exam</a>
+            <ul>
+                <li><a href="javascript_lab2.html">Register</a></li>
+                <li><a href="res_signin.html">Login</a></li>
+            </ul>
+        </li>
+        <li><a href=""><i class="fa fa-wrench"></i> Branch</a>
+            <ul>
+                <li><a href="">CSE +</a>
+                    <ul>
+                        <li><a href="faculty.html">Faculty</a></li>
+                        <li><a href="student.html" onclick="return PopUp();">Student</a></li>
+                    </ul>
+                </li>   
+                <li><a href="">ECE</a></li>
+                <li><a href="">Mech</a></li>
+            </ul>
+        </li>
+        <li><a href="contact.html"><i class="fa fa-phone"></i> Contact</a></li>
+    </ul> 
+    </nav>
+    <ul id="mySidenav" class="sidenav">
+        <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="background-color:transparent;">&times;</a></li>
+        <li><a href="#"><i class="fa fa-home"></i></a></li>
+        <li><a href="#">Exam</a>
+            <ul class="exam" style="top:179px ;">
+                <li><a href="login.html">Login</a></li>
+                <li><a href="javascript_lab2.html">Register</a></li>
+            </ul>
+        </li>
+        <li><a href="#" >Branch</a>
+            <ul style="top:220px">
+            <li>
+                <a href="">CSE +</a>
+                <ul>
+                <li><a href="faculty.html">Faculty</a></li>
+                <li><a href="student.html">Student</a></li>
+                </ul>
+            </li>
+            <li><a href="">ECE</a></li>
+            <li><a href="">MECH</a></li>
+            </ul>
+        </li>
+        <li><a href=""><i class="fa fa-phone"></i></a></li>
+    </ul>
+    <!--<div id="pop">
+        <a href="javascript:void(0)" class="closebtn" onclick="closepop()" id="close_btns">&times;</a>
+        <Label>Enter Student ID:</Label>    
+        <input type="text" id="entry" style="width:200px ;height:25px;font-size: large;font-weight: bold;"><br><br>
+        <input type="submit" name="" id=""value="Check" style="width: 70px;height: 25px;font-size:large;" onclick="Check();"><br><br>
+        <p style="font-size:30px ;font-weight: bold;" id="validornot"></p>
+    </div>-->
+    <div class="left_navigation">
+        <Label class="id_font">ID No:</Label>
+        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for ID.." class="input_box">
+        <i id="iclass_style" class="fa fa-search "></i>
+        <ul>
+            <li id="myUL" ></li>
+        </ul>
+    </div>
+    <iframe src="imageslider.html" name="middle" id="image" name="m" class="image_slide"></iframe>
+    <iframe src="notification.html" frameborder="0" id="notify" class="notifi_slide"></iframe>
+        </div>
+        <footer>
+            <div class="content">
+              <div class="top">
+                <div class="logo-details">
+                  <i class="fab fa-slack"></i>
+                  <span class="logo_name">Logo</span>
+                </div>
+                <div class="media-icons">
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                  <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+              </div>
+              <div class="link-boxes">
+                <ul class="box">
+                  <li class="link_name">Company</li>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Contact us</a></li>
+                  <li><a href="#">About us</a></li>
+                  <li><a href="#">Get started</a></li>
+                </ul>
+                <ul class="box">
+                  <li class="link_name">Services</li>
+                  <li><a href="#">App design</a></li>
+                  <li><a href="#">Web design</a></li>
+                  <li><a href="#">Logo design</a></li>
+                  <li><a href="#">Banner design</a></li>
+                </ul>
+                <ul class="box">
+                  <li class="link_name">Account</li>
+                  <li><a href="#">Profile</a></li>
+                  <li><a href="#">My account</a></li>
+                  <li><a href="#">Prefrences</a></li>
+                  <li><a href="#">Purchase</a></li>
+                </ul>
+                <ul class="box">
+                  <li class="link_name">Courses</li>
+                  <li><a href="#">HTML & CSS</a></li>
+                  <li><a href="#">JavaScript</a></li>
+                  <li><a href="#">Photography</a></li>
+                  <li><a href="#">Photoshop</a></li>
+                </ul>
+                <ul class="box input-box">
+                  <li class="link_name">Subscribe</li>
+                  <li><input type="text" placeholder="Enter your email"></li>
+                  <li><input type="button" value="Subscribe"></li>
+                </ul>
+              </div>
+            </div>
+            <div class="bottom-details">
+              <div class="bottom_text">
+                <span class="copyright_text">Copyright © 2021 <a href="#">Logo.</a>All rights reserved</span>
+                <span class="policy_terms">
+                  <a href="#">Privacy policy</a>
+                  <a href="#">Terms & condition</a>
+                </span>
+              </div>
+            </div>
+          </footer>
+    <script src="sir_website.js">
+
+    </script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>   
+</body>
+</html>

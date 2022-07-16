@@ -1,0 +1,48 @@
+.form_style{
+    margin: 0 auto;
+    height: 140%;
+    width: 45%;
+    box-shadow: 2px 2px 10px black;
+    padding: 40px;
+}
+.firse_name{
+    outline: none;
+    height: 30px;
+    width: 30%;
+}
+.Last_name{
+    outline: none;
+    width: 30%;
+    height: 30px;
+    margin-left: 20px;
+}
+.middle_name{
+    margin-left: 20px;
+    outline: none;
+    width: 30%;
+    height: 30px;
+}
+.full_name{
+    height: 30px;
+    width: 100%;
+}
+.phone_number{
+    height: 30px;
+    width: 100%;
+}
+.password{
+    height: 30px;
+    width: 100%;
+}
+.date_n{
+    height: 30px;
+    width: 100%;
+}
+.check_box{
+    margin-left: 50px;
+}
+table,td,tr{
+    border: 1px solid black;
+    border-collapse: collapse;
+    border: none;
+}
