@@ -63,8 +63,21 @@
     <div>
         <h1>Faculty Form</h1>
         <p></p>
-        <input type="text" name="" id="" placeholder="Enter your id no">
-        <button>Submit</button>
+        <input type="text" name="" id="demo" placeholder="Enter your id no">
+        <button onclick="fun()">Submit</button>
+        <span style="color: red;" id="sub"></span>
     </div>
+    <script>
+        function fun(){
+            n=document.getElementById('demo').value;
+            if(/F+\d{6}/.test(n)){
+                document.getElementById('sub').innerHTML="";
+            }
+            else{
+                document.getElementById('sub').innerHTML="Invalid ID no";
+            }
+
+        }
+    </script>
 </body>
 </html>
